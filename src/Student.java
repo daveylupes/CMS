@@ -3,8 +3,8 @@ import java.util.*;
 public class Student {
     private String name;
     private String id;
-    private List<Course> enrolledCourses;
-    private Map<Course, Double> grades;
+    private final List<Course> enrolledCourses;
+    private final Map<Course, Double> grades;
 
     public Student(String name, String id) {
         this.name = name;

@@ -14,7 +14,7 @@ public class AdministratorInterface {
             System.out.print("Enter your choice: ");
 
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
@@ -53,7 +53,7 @@ public class AdministratorInterface {
                 case 3:
                     System.out.print("Enter student ID: ");
                     studentId = scanner.nextLine();
-                    student = new Student("", studentId); // Replace with actual retrieval of Student object
+                    student = new Student("", studentId);
 
                     System.out.print("Enter course code: ");
                     courseCode = scanner.nextLine();
@@ -75,7 +75,7 @@ public class AdministratorInterface {
                 case 4:
                     System.out.print("Enter student ID: ");
                     studentId = scanner.nextLine();
-                    student = new Student("", studentId); // Replace with actual retrieval of Student object
+                    student = new Student("", studentId);
 
                     try {
                         double overallGrade = CourseManagement.calculateOverallGrade(student);
